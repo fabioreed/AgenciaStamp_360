@@ -21,26 +21,23 @@ export const TitleContainer = styled.div`
   gap: 2rem;
 
   > h1 {
-    /* color: var(--white);
-    font-size: 2.5rem; */
-    position: relative;
-    font-size: 2.5rem;
     color: transparent;
-    display: inline-block;
+    background-image: url('https://images.pexels.com/photos/1774986/pexels-photo-1774986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-clip: text;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    font-size: 2.5rem;
 
     > span {
-      /* color: var(--yellow);
-      font-style: italic;
-      font-weight: 600; */
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://images.pexels.com/photos/1774986/pexels-photo-1774986.jpeg?auto=compress&cs=tinysrgb&w=600');
-      background-size: cover; /* Ajuste conforme necessário */
-      background-clip: text; /* Isso faz com que a imagem apareça apenas onde o texto estiver */
-      color: transparent;
+       color: transparent;
+      background-image: url('https://images.pexels.com/photos/1487703/pexels-photo-1487703.jpeg?auto=compress&cs=tinysrgb&w=600');
+      background-size: cover;
+      background-clip: text;
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
       font-style: italic;
       font-weight: 600;
     }
@@ -113,6 +110,18 @@ export const PartnersCompanies = styled.section`
   align-items: center;
   gap: 4rem;
 
+  .fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Inicialmente, move a div para baixo */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Outros estilos apropriados, como cor de fundo, tamanho, etc. */
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Quando a div fica visível, move para cima */
+  }
+
   > h3 {
     font-size: .8rem;
     font-weight: 600;
@@ -173,4 +182,3 @@ export const PartnersCompanies = styled.section`
     }
   }
 `
-

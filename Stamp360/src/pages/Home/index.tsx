@@ -6,7 +6,6 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 
 const Home = () => {
   const phoneNumber = "+5571992305676"
-
   const whatsappUrl = `https://wa.me/${phoneNumber}`
 
   return (
@@ -14,7 +13,7 @@ const Home = () => {
       <Header />
       <MainContainer>
         <TitleContainer>
-          <h1 className="custom-background">Pronto para <span>alavancar</span> sua empresa?</h1>
+          <h1 className="custom-background">PRONTO PARA <span>ALAVANCAR</span> SUA EMPRESA?</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam et vero, autem recusandae debitis facere culpa maiores repellendus id.</p>
         </TitleContainer>
         <KnowMoreBtn to={whatsappUrl} target='_blank'>
