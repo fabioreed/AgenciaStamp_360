@@ -14,7 +14,7 @@ const Home = () => {
       <MainContainer>
         <TitleContainer>
           <h1 className="custom-background">PRONTO PARA <span>ALAVANCAR</span> SUA EMPRESA?</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam et vero, autem recusandae debitis facere culpa maiores repellendus id.</p>
+          <p>Descubra como a <span>Stamp</span> pode impulsionar a sua empresa à novas alturas!</p>
         </TitleContainer>
         <KnowMoreBtn to={whatsappUrl} target='_blank'>
           <IoLogoWhatsapp />

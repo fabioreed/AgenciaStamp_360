@@ -31,13 +31,7 @@ export const TitleContainer = styled.div`
     font-size: 2.5rem;
 
     > span {
-       color: transparent;
-      background-image: url('https://images.pexels.com/photos/1487703/pexels-photo-1487703.jpeg?auto=compress&cs=tinysrgb&w=600');
-      background-size: cover;
-      background-clip: text;
-      background-attachment: fixed;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
+      color: var(--primary-color);
       font-style: italic;
       font-weight: 600;
     }
@@ -47,6 +41,12 @@ export const TitleContainer = styled.div`
     color: var(--gray);
     font-size: .9rem;
     line-height: 170%;
+
+    > span {
+      color: var(--primary-color);
+      font-style: italic;
+      font-weight: 700;
+    }
   }
 
   @media (min-width: 768px) {
@@ -67,9 +67,9 @@ export const KnowMoreBtn = styled(Link)`
   gap: .5rem;
   margin: 0 auto;
 
-  background-color: var(--hover);
+  background-color: var(--primary-color);
 
-  color: var(--white);
+  color: var(--black);
   font-size: 1rem;
   font-weight: 600;
 
@@ -77,19 +77,23 @@ export const KnowMoreBtn = styled(Link)`
   width: fit-content;
 
   border-radius: 10px;
+  border: 2px solid transparent;
 
   box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.3);
 
-  transition: .2s ease;
+  transition: .4s ease;
 
   :nth-child(1) {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   &:hover {
-    background-color: var(--green);
+    background-color: var(--black);
 
-    color: var(--blue);
+    color: var(--primary-color);
+
+    border-radius: 16px 2px 16px 2px;
+    border: 2px solid var(--primary-color);
   }
 
   @media (min-width: 768px) {

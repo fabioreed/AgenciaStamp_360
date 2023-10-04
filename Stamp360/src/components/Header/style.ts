@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   
   padding: 1rem;
 
-  background: var(--primary-color);
+  background: var(--black);
 
   @media (min-width: 768px) {
     padding: 2rem 12rem;
@@ -16,11 +16,11 @@ export const HeaderContainer = styled.header`
 
 export const TitleHeaderContainer = styled.div`
   > h2 {
-    color: var(--hover);
+    color: var(--primary-color);
     font-size: 1rem;
 
     > span {
-      color: var(--green);
+      color: var(--gray);
       font-style: italic;
     }
   }
