@@ -5,6 +5,8 @@ export const SectionAboutUsContainer = styled.section`
   gap: 2rem;
   align-items: center;
   justify-content: center;
+
+  height: 100vh;
 `
 
 export const ContentContainer = styled.div`
@@ -40,14 +42,14 @@ export const ContentContainer = styled.div`
 `
 
 export const ImageContainer = styled.figure`
-  width: 50%;
-  height: 100%;
+  height: 55%;
   position: relative;
   
   > img {
-    border-radius: 0 8px;
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+    display: none;
   }
 
   .color-filter {
@@ -58,8 +60,20 @@ export const ImageContainer = styled.figure`
     height: 98.5%;
 
     background-color: var(--primary-color);
-    opacity: 0.3;
+    opacity: 0.16;
 
-    border-radius: 0 8px;
+    display: none;
+  }
+
+  @media (min-width: 970px) {
+    width: 100%;
+
+    > img {
+      display: flex;
+    }
+
+    .color-filter {
+      display: flex;
+    }
   }
 `
