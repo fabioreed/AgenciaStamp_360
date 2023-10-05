@@ -9,6 +9,20 @@ const Home = () => {
   const phoneNumber = "+5571992305676"
   const whatsappUrl = `https://wa.me/${phoneNumber}`
 
+  const observer = new IntersectionObserver((entries) => {
+    entries?.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show')
+      } else {
+        entry.target.classList.remove('show')
+      }
+    })
+  })
+
+  const hiddenElements: any = document.querySelector('.hidden')
+  hiddenElements?.forEach((el: any) => observer.observe(el))
+
   return (
     <>
       <Header />
@@ -16,13 +30,13 @@ const Home = () => {
         <TitleContainer>
           <h1 className="custom-background">PRONTO PARA <span>ALAVANCAR</span> SUA EMPRESA?</h1>
           <p>Descubra como a <span>Stamp</span> pode impulsionar a sua empresa à novas alturas!</p>
+          <KnowMoreBtn to={whatsappUrl} target='_blank'>
+            <IoLogoWhatsapp />
+            Entre em Contato
+          </KnowMoreBtn>
         </TitleContainer>
-        <KnowMoreBtn to={whatsappUrl} target='_blank'>
-          <IoLogoWhatsapp />
-          Entre em Contato
-        </KnowMoreBtn>
         <PartnersCompanies>
-          <h3>Empresas que nos apoiam:</h3>
+          <h3>EMPRESAS QUE NOS APOIAM</h3>
           <figure>
             <div>
               <img src={sebrae} alt="Logo do Sebrae" />

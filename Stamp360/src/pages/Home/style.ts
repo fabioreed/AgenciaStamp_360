@@ -17,13 +17,21 @@ export const MainContainer = styled.main`
   flex-direction: column;
   gap: 2.4rem;
 
-  padding: 1rem;
-
   animation: ${fadeIn} .9s ease-in-out;
 
-  @media (min-width: 768px) {
-    padding: 2rem 12rem;
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+  }
 
+  .show {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  @media (min-width: 768px) {
     gap: 3rem;
   }
 `
@@ -32,6 +40,8 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  padding: 1rem;
 
   > h1 {
     color: transparent;
@@ -63,6 +73,8 @@ export const TitleContainer = styled.div`
   }
 
   @media (min-width: 768px) {
+    padding: 2rem 12rem;
+
     > h1 {
       font-size: 4.4rem;
     }
@@ -127,22 +139,15 @@ export const PartnersCompanies = styled.section`
   align-items: center;
   gap: 2.2rem;
 
-  .fade-in {
-  opacity: 0;
-  transform: translateY(20px); /* Inicialmente, move a div para baixo */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-    /* Outros estilos apropriados, como cor de fundo, tamanho, etc. */
-  }
+  background: var(--primary-color);
 
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0); /* Quando a div fica visível, move para cima */
-  }
+  height: 100vh;
+  width: 100vw;
 
   > h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--white);
+    color: var(--black);
   }
   
   > figure {
@@ -154,9 +159,10 @@ export const PartnersCompanies = styled.section`
 
     color: var(--white);
     font-size: 2rem;
-    
+
     > div {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
@@ -166,10 +172,14 @@ export const PartnersCompanies = styled.section`
     > div > img {
       width: 70px;
 
-      opacity: .5;
+      background: var(--black);
+
+      padding: 1rem;
+
+      border-radius: 12px;
 
       &:nth-child(2) {
-        width: 100px;
+        width: 70px;
       }
     }
   }
@@ -177,7 +187,6 @@ export const PartnersCompanies = styled.section`
   @media (min-width: 768px) {
     > h3 {
       font-size: 2.1rem;
-      font-weight: 300;
     }
 
     > figure {
@@ -198,3 +207,4 @@ export const PartnersCompanies = styled.section`
     }
   }
 `
+

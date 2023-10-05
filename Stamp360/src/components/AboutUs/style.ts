@@ -7,6 +7,12 @@ export const SectionAboutUsContainer = styled.section`
   justify-content: center;
 
   height: 100vh;
+
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem 12rem;
+  }
 `
 
 export const ContentContainer = styled.div`
