@@ -7,6 +7,7 @@ import partners from '../../assets/Back to back-amico.svg'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import AboutUs from '../../components/AboutUs'
 import SocialMedia from '../../components/SocialMedia'
+import Footer from '../../components/Footer'
 
 const Home = () => {
   const phoneNumber = "+5571992305676"
@@ -57,6 +58,7 @@ const Home = () => {
         <AboutUs />
         <SocialMedia />
       </MainContainer>
+      <Footer />
     </>
   )
 }
