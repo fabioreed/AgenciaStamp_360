@@ -60,7 +60,7 @@ export const ImageContainer = styled.figure`
     height: 98.5%;
 
     background-color: var(--primary-color);
-    opacity: 0.16;
+    opacity: .2;
 
     display: none;
   }

@@ -1,5 +1,5 @@
 import { HeaderContainer, ListContainer, TitleHeaderContainer } from "./style"
-import { GiHamburgerMenu } from 'react-icons/gi'
+// import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Header = () => {
   return (
@@ -10,7 +10,8 @@ const Header = () => {
       <ListContainer>
         {/* <li>O que fazemos</li>
         <li>Contato</li> */}
-        <GiHamburgerMenu />
+        {/* <GiHamburgerMenu /> */}
+        <button>Saber mais</button>
       </ListContainer>
     </HeaderContainer>
   )

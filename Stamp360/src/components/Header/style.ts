@@ -37,4 +37,35 @@ export const ListContainer = styled.ul`
     color: var(--white);
     font-size: .8rem;
   }
+
+  > button {
+    background: var(--primary-color);
+
+    color: var(--black);
+
+    border: 1px solid transparent;
+
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: .7rem 2.4rem;
+    width: fit-content;
+
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.3);
+
+    transition: .4s ease;
+
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: var(--black);
+
+      color: var(--primary-color);
+
+      border-radius: 16px 2px 16px 2px;
+      border: 2px solid var(--primary-color);
+    }
+  }
 `
