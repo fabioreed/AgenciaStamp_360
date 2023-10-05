@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import { KnowMoreBtn, MainContainer, PartnersCompanies, TitleContainer } from './style'
 import sebrae from '../../assets/SEBRAE-nacional.gif'
 import fortlev from '../../assets/fortlev-logo-white.png'
+import partners from '../../assets/Back to back-amico.svg'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import AboutUs from '../../components/AboutUs'
 import SocialMedia from '../../components/SocialMedia'
@@ -45,12 +46,12 @@ const Home = () => {
         </TitleContainer>
         <PartnersCompanies>
           <h3 className="hidden">EMPRESAS QUE NOS APOIAM</h3>
-          <div></div>
           <figure>
             <div className="hidden">
               <img src={sebrae} alt="Logo do Sebrae" className="hidden logo" />
               <img src={fortlev} alt="Logo da FortLev" className="hidden logo" />
             </div>
+            <img src={partners} alt="partners desenho" />
           </figure>
         </PartnersCompanies>
         <AboutUs />

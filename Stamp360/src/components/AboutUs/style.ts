@@ -9,6 +9,11 @@ export const SectionAboutUsContainer = styled.section`
   margin: 0 auto;
 
   padding: 1rem 3rem;
+  width: 85%;
+
+  border-top: .8px solid var(--primary-color);
+  border-bottom: .8px solid var(--primary-color);
+  border-radius: 12px;
 
   .hidden {
     opacity: 0;
@@ -43,6 +48,8 @@ export const SectionAboutUsContainer = styled.section`
     padding: 2rem 12rem;
 
     height: 100vh;
+
+    width: 90%;
   }
 `
 

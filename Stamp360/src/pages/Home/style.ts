@@ -163,21 +163,21 @@ export const PartnersCompanies = styled.section`
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--primary-color);
+    text-align: start;
   }
 
-  > div {
-    border-bottom: 1px solid var(--gray);
-  }
-  
   > figure {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 
     color: var(--white);
     font-size: 2rem;
+
+    > img {
+      display: none;
+    }
 
     > div {
       display: flex;
@@ -210,10 +210,16 @@ export const PartnersCompanies = styled.section`
 
     > figure {
       gap: 0;
+
+      > img {
+        width: 320px;
+        display: flex;
+      }
     }
 
     > figure > div {
       flex-direction: row;
+      justify-content: space-between;
       gap: 2rem;
     }
 

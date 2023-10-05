@@ -54,10 +54,10 @@ export const ListContainer = styled.ul`
     border: 1px solid transparent;
 
     color: var(--black);
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
 
-    padding: .7rem 2.4rem;
+    padding: .6rem 1.7rem;
     width: fit-content;
 
     box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.3);
@@ -74,6 +74,13 @@ export const ListContainer = styled.ul`
 
       border-radius: 16px 2px 16px 2px;
       border: 2px solid var(--primary-color);
+    }
+  }
+
+  @media (min-width: 768px) {
+    > button {
+      padding: .7rem 2.4rem;
+      font-size: 1rem;
     }
   }
 `
