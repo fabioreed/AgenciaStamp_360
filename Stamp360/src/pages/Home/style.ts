@@ -33,7 +33,7 @@ export const TitleContainer = styled.div`
     > span {
       color: var(--primary-color);
       font-style: italic;
-      font-weight: 600;
+      font-weight: 800;
     }
   }
 
