@@ -1,5 +1,16 @@
 import { Link } from "react-router-dom"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
 
 export const MainContainer = styled.main`
   display: flex;
@@ -7,6 +18,8 @@ export const MainContainer = styled.main`
   gap: 2.4rem;
 
   padding: 1rem;
+
+  animation: ${fadeIn} .9s ease-in-out;
 
   @media (min-width: 768px) {
     padding: 2rem 12rem;
@@ -169,7 +182,6 @@ export const PartnersCompanies = styled.section`
 
     > figure {
       gap: 0;
-
     }
 
     > figure > div {
