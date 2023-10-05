@@ -112,7 +112,7 @@ export const PartnersCompanies = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2.2rem;
 
   .fade-in {
   opacity: 0;
@@ -127,9 +127,8 @@ export const PartnersCompanies = styled.section`
   }
 
   > h3 {
-    font-size: .8rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    font-style: italic;
     color: var(--white);
   }
   
@@ -164,7 +163,7 @@ export const PartnersCompanies = styled.section`
 
   @media (min-width: 768px) {
     > h3 {
-      font-size: 2.9rem;
+      font-size: 2.4rem;
     }
 
     > figure {

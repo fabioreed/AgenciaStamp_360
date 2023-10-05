@@ -3,6 +3,7 @@ import { KnowMoreBtn, MainContainer, PartnersCompanies, TitleContainer } from '.
 import sebrae from '../../assets/SEBRAE-nacional.gif'
 import fortlev from '../../assets/fortlev-logo-white.png'
 import { IoLogoWhatsapp } from 'react-icons/io'
+import AboutUs from '../../components/AboutUs'
 
 const Home = () => {
   const phoneNumber = "+5571992305676"
@@ -29,9 +30,7 @@ const Home = () => {
             </div>
           </figure>
         </PartnersCompanies>
-        <section>
-
-        </section>
+        <AboutUs />
       </MainContainer>
     </>
   )
