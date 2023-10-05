@@ -156,7 +156,7 @@ export const PartnersCompanies = styled.section`
 
   background: transparent;
 
-  height: 80vh;
+  height: 50vh;
   width: 100vw;
 
   > h3 {

@@ -53,6 +53,9 @@ export const ContentContainer = styled.div`
     font-size: 1.2rem;
     font-weight: 300;
 
+    display: flex;
+    gap: .5rem;
+
     > span {
       color: var(--primary-color);
     }
