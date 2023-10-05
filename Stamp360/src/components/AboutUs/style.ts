@@ -18,6 +18,7 @@ export const ContentContainer = styled.div`
   > h2 {
     color: var(--gray);
     font-size: 1.2rem;
+    font-weight: 300;
 
     > span {
       color: var(--primary-color);
@@ -28,11 +29,17 @@ export const ContentContainer = styled.div`
     color: var(--gray);
     line-height: 150%;
     font-size: .8rem;
+    font-weight: 400;
+
+    > span {
+      font-weight: 600;
+      color: var(--primary-color);
+    }
   }
 
   @media (min-width: 768px) {
     > h2 {
-      font-size: 2.4rem;
+      font-size: 2.1rem;
     }
 
     > p {
