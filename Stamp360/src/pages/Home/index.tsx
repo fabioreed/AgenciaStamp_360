@@ -5,6 +5,7 @@ import sebrae from '../../assets/SEBRAE-nacional.gif'
 import fortlev from '../../assets/fortlev-logo-white.png'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import AboutUs from '../../components/AboutUs'
+import SocialMedia from '../../components/SocialMedia'
 
 const Home = () => {
   const phoneNumber = "+5571992305676"
@@ -44,7 +45,8 @@ const Home = () => {
         </TitleContainer>
         <PartnersCompanies>
           <h3 className="hidden">EMPRESAS QUE NOS APOIAM</h3>
-          <figure className="hidden">
+          <div></div>
+          <figure>
             <div className="hidden">
               <img src={sebrae} alt="Logo do Sebrae" className="hidden logo" />
               <img src={fortlev} alt="Logo da FortLev" className="hidden logo" />
@@ -52,6 +54,7 @@ const Home = () => {
           </figure>
         </PartnersCompanies>
         <AboutUs />
+        <SocialMedia />
       </MainContainer>
     </>
   )

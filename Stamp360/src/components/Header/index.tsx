@@ -1,17 +1,18 @@
 import { HeaderContainer, ListContainer, TitleHeaderContainer } from "./style"
-// import { GiHamburgerMenu } from 'react-icons/gi'
+import { BsFillCaretDownFill } from 'react-icons/bs'
+import logo from '../../assets/text nova.png'
 
 const Header = () => {
   return (
     <HeaderContainer>
       <TitleHeaderContainer>
-        <h2>Stamp<span>.360</span></h2>
+        <img src={logo} alt="Logo Nova" />
       </TitleHeaderContainer>
       <ListContainer>
         {/* <li>O que fazemos</li>
         <li>Contato</li> */}
         {/* <GiHamburgerMenu /> */}
-        <button>Saber mais</button>
+        <button>Saber mais <BsFillCaretDownFill/></button>
       </ListContainer>
     </HeaderContainer>
   )

@@ -164,6 +164,10 @@ export const PartnersCompanies = styled.section`
     font-weight: 600;
     color: var(--primary-color);
   }
+
+  > div {
+    border-bottom: 1px solid var(--gray);
+  }
   
   > figure {
     display: flex;

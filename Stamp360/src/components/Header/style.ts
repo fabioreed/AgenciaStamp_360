@@ -10,11 +10,15 @@ export const HeaderContainer = styled.header`
   background: var(--black);
 
   @media (min-width: 768px) {
-    padding: 2rem 12rem;
+    padding: 1rem 12rem;
   }
 `
 
 export const TitleHeaderContainer = styled.div`
+  > img {
+    width: 90px;
+  }
+
   > h2 {
     color: var(--primary-color);
     font-size: 1rem;
@@ -39,6 +43,10 @@ export const ListContainer = styled.ul`
   }
 
   > button {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
     background: var(--primary-color);
 
     color: var(--black);
