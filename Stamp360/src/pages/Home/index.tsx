@@ -37,7 +37,7 @@ const Home = () => {
       <MainContainer>
         <TitleContainer>
           <h1>PRONTO PARA <span>ALAVANCAR</span> SUA EMPRESA?</h1>
-          <p className='hidden'>Descubra como a <span>Stamp</span> pode impulsionar a sua empresa à novas alturas!</p>
+          <p className='hidden'>Descubra como a <span>Nova</span> pode impulsionar a sua empresa à novas alturas!</p>
           <KnowMoreBtn to={whatsappUrl} target='_blank'>
             <IoLogoWhatsapp />
             Entre em Contato

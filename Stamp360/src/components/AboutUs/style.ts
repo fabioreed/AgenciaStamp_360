@@ -62,6 +62,7 @@ export const ContentContainer = styled.div`
 
     > span {
       color: var(--primary-color);
+      font-weight: 600;
     }
   }
 
