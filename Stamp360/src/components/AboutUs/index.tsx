@@ -19,6 +19,7 @@ const AboutUs = () => {
         <img
           src="https://images.pexels.com/photos/1181498/pexels-photo-1181498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Imagem mulher com notebook"
+          className="hidden logo"
         />
         <div className="color-filter"></div>
       </ImageContainer>

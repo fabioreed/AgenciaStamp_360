@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const SectionAboutUsContainer = styled.section`
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 
-  height: 100vh;
-
-  padding: 1rem;
+  padding: 1rem 3rem;
 
   .hidden {
     opacity: 0;
@@ -38,7 +38,11 @@ export const SectionAboutUsContainer = styled.section`
   }
 
   @media (min-width: 768px) {
+    flex-direction: row;
+    
     padding: 2rem 12rem;
+
+    height: 100vh;
   }
 `
 
@@ -92,7 +96,6 @@ export const ImageContainer = styled.figure`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
   }
 
   .color-filter {
@@ -104,19 +107,9 @@ export const ImageContainer = styled.figure`
 
     background-color: var(--primary-color);
     opacity: .2;
-
-    display: none;
   }
 
   @media (min-width: 970px) {
     width: 100%;
-
-    > img {
-      display: flex;
-    }
-
-    .color-filter {
-      display: flex;
-    }
   }
 `
