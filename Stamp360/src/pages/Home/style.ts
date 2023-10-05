@@ -29,6 +29,21 @@ export const MainContainer = styled.main`
   .show {
     opacity: 1;
     filter: blur(0);
+    transform: translateX(0);
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .logo:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  .logo:nth-child(3) {
+    transition-delay: 400ms;
+  }
+  .logo:nth-child(4) {
+    transition-delay: 600ms;
   }
 
   @media (min-width: 768px) {
@@ -139,15 +154,15 @@ export const PartnersCompanies = styled.section`
   align-items: center;
   gap: 2.2rem;
 
-  background: var(--primary-color);
+  background: transparent;
 
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
 
   > h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--black);
+    color: var(--primary-color);
   }
   
   > figure {
@@ -170,7 +185,7 @@ export const PartnersCompanies = styled.section`
     }
 
     > div > img {
-      width: 70px;
+      width: 150px;
 
       background: var(--black);
 
@@ -179,7 +194,7 @@ export const PartnersCompanies = styled.section`
       border-radius: 12px;
 
       &:nth-child(2) {
-        width: 70px;
+        width: 150px;
       }
     }
   }
@@ -199,7 +214,7 @@ export const PartnersCompanies = styled.section`
     }
 
     > figure > div > img {
-      width: 200px;
+      width: 220px;
 
       &:nth-child(2) {
         width: 260px;

@@ -10,6 +10,33 @@ export const SectionAboutUsContainer = styled.section`
 
   padding: 1rem;
 
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .logo:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  .logo:nth-child(3) {
+    transition-delay: 400ms;
+  }
+  .logo:nth-child(4) {
+    transition-delay: 600ms;
+  }
+
   @media (min-width: 768px) {
     padding: 2rem 12rem;
   }
