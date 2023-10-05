@@ -11,7 +11,7 @@ export const MainContainer = styled.main`
   @media (min-width: 768px) {
     padding: 2rem 12rem;
 
-    gap: 6rem;
+    gap: 3rem;
   }
 `
 
