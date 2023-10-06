@@ -9,11 +9,12 @@ export const SectionAboutUsContainer = styled.section`
   margin: 0 auto;
 
   padding: 1rem 3rem;
-  width: 95%;
+  width: 100%;
 
   border-top: .8px solid var(--primary-color);
   border-bottom: .8px solid var(--primary-color);
-  border-radius: 12px;
+
+  background: var(--gray);
 
   .hidden {
     opacity: 0;
@@ -49,7 +50,7 @@ export const SectionAboutUsContainer = styled.section`
 
     height: 100vh;
 
-    width: 90%;
+    /* width: 90%; */
   }
 `
 
@@ -60,7 +61,7 @@ export const ContentContainer = styled.div`
   gap: 2rem;
 
   > h2 {
-    color: var(--gray);
+    color: var(--black);
     font-size: 1.2rem;
     font-weight: 300;
 
@@ -74,7 +75,7 @@ export const ContentContainer = styled.div`
   }
 
   > p {
-    color: var(--gray);
+    color: var(--black);
     line-height: 150%;
     font-size: .8rem;
     font-weight: 400;
