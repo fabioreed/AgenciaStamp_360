@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export const SocialMediaContainer = styled.section`
@@ -29,5 +30,20 @@ export const SocialMediaContainer = styled.section`
 
   @media (min-width: 768px) {
     padding: 3rem 12rem;
+
+    > div {
+      gap: 2rem;
+    }
+  }
+`
+
+export const SocialMediaLink = styled(Link)`
+  color: var(--gray);
+  font-size: 1.7rem;
+
+  transition: .2s ease;
+
+  &:hover {
+    color: var(--primary-color);
   }
 `

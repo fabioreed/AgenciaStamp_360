@@ -1,6 +1,7 @@
-import { BsInstagram, BsFacebook, BsWhatsapp } from 'react-icons/bs'
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
-import { SocialMediaContainer } from './style'
+import { SocialMediaContainer, SocialMediaLink } from './style'
+import { userData } from '../../utils/userData'
 
 const SocialMedia = () => {
 
@@ -8,10 +9,15 @@ const SocialMedia = () => {
     <SocialMediaContainer>
       <h3>SOCIAL MEDIA</h3>
       <div>
-        <BsInstagram />
-        <BsWhatsapp />
-        <BsFacebook />
-        <SiGmail />
+        <SocialMediaLink to={`https://instagram.com/${userData.instagram}`} target="_blank">
+          <BsInstagram />
+        </SocialMediaLink>
+        <SocialMediaLink to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">
+          <BsWhatsapp />
+        </SocialMediaLink>
+        <SocialMediaLink to={`mailto:${userData.emailUser}`} target="_blank">
+          <SiGmail />
+        </SocialMediaLink>
       </div>
     </SocialMediaContainer>
   )

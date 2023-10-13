@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
@@ -49,5 +50,16 @@ export const SocialMediaContainerFooter = styled.section`
     font-size: 1.2rem;
 
     gap: 2rem;
+  }
+`
+
+export const LinkToSocialMedia = styled(Link)`
+  color: var(--gray);
+  font-size: 1.2rem;
+
+  transition: .2s ease;
+
+  &:hover {
+    color: var(--primary-color);
   }
 `

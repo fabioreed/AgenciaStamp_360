@@ -1,6 +1,7 @@
 import logo from '../../assets/logo-1.png'
-import { FooterContainer, SocialMediaContainerFooter } from './style'
-import { BsInstagram, BsWhatsapp, BsFacebook } from 'react-icons/bs'
+import { userData } from '../../utils/userData'
+import { FooterContainer, LinkToSocialMedia, SocialMediaContainerFooter } from './style'
+import { BsInstagram, BsWhatsapp } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
 
 const Footer = () => {
@@ -12,10 +13,16 @@ const Footer = () => {
 
       <p>©️ Todos os direitos reservados</p>
       <SocialMediaContainerFooter>
-        <BsInstagram />
-        <BsWhatsapp />
-        <BsFacebook />
-        <SiGmail />
+        <LinkToSocialMedia to={`https://instagram.com/${userData.instagram}`} target="_blank">
+          <BsInstagram />
+        </LinkToSocialMedia>
+        <LinkToSocialMedia to={`https://wa.me/${userData.whatsappNumber}`} target="_blank">
+          <BsWhatsapp />
+        </LinkToSocialMedia>
+        {/* <BsFacebook /> */}
+        <LinkToSocialMedia to={`mailto:${userData.emailUser}`} target="_blank">
+          <SiGmail />
+        </LinkToSocialMedia>
       </SocialMediaContainerFooter>
     </FooterContainer>
   )
