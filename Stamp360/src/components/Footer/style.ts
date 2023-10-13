@@ -15,7 +15,7 @@ export const FooterContainer = styled.footer`
 
   > figure {
     > img {
-      width: 40px;
+      width: 50px;
     }
   }
 
@@ -27,10 +27,10 @@ export const FooterContainer = styled.footer`
   @media (min-width: 768px) {
     flex-direction: row;
 
-    padding: 5rem 12rem;
+    padding: 2rem 12rem;
 
     > figure > img {
-      width: 70px;
+      width: 80px;
     }
 
     > p {

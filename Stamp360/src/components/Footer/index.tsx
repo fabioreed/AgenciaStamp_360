@@ -1,4 +1,4 @@
-import logo from '../../assets/text nova.png'
+import logo from '../../assets/logo-1.png'
 import { FooterContainer, SocialMediaContainerFooter } from './style'
 import { BsInstagram, BsWhatsapp, BsFacebook } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'

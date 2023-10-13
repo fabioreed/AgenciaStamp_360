@@ -14,7 +14,7 @@ export const SectionAboutUsContainer = styled.section`
   border-top: .8px solid var(--primary-color);
   border-bottom: .8px solid var(--primary-color);
 
-  background: var(--gray);
+  background: var(--black);
 
   .hidden {
     opacity: 0;
@@ -49,8 +49,6 @@ export const SectionAboutUsContainer = styled.section`
     padding: 2rem 12rem;
 
     height: 100vh;
-
-    /* width: 90%; */
   }
 `
 
@@ -61,7 +59,7 @@ export const ContentContainer = styled.div`
   gap: 2rem;
 
   > h2 {
-    color: var(--black);
+    color: var(--gray);
     font-size: 1.2rem;
     font-weight: 300;
 
@@ -75,7 +73,7 @@ export const ContentContainer = styled.div`
   }
 
   > p {
-    color: var(--black);
+    color: var(--gray);
     line-height: 150%;
     font-size: .8rem;
     font-weight: 400;
@@ -100,6 +98,10 @@ export const ContentContainer = styled.div`
 export const ImageContainer = styled.figure`
   height: 55%;
   position: relative;
+
+  box-shadow: var(--primary-color) 0px 0px 200px -50px;
+
+  border: thin var(--primary-color);
   
   > img {
     width: 100%;

@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   background: var(--black);
 
   @media (min-width: 768px) {
-    padding: 1rem 12rem;
+    padding: 1rem 10rem;
   }
 `
 
@@ -26,6 +26,12 @@ export const TitleHeaderContainer = styled.div`
     > span {
       color: var(--gray);
       font-style: italic;
+    }
+  }
+
+  @media (min-width: 768px) {
+    > img {
+      width: 100px;
     }
   }
 `

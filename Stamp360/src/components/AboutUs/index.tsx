@@ -6,10 +6,10 @@ const AboutUs = () => {
     <SectionAboutUsContainer>
       <ContentContainer>
         <h2 className="hidden logo">
-          O que é a <span>Nova?</span>
+          O que é a <span>Stamp?</span>
         </h2>
         <p>
-          A <span>Nova</span> é uma agência de comunicação e marketing digital.<br /><br />
+          A <span>Stamp</span> é uma agência de comunicação e marketing digital.<br /><br />
           Nós nascemos coma missão de <span><b>impulsionar</b></span> os seus resultados através de soluções criativas para o seu negócio.<br /><br />
           Visamos estabelecer, fortalecer e otimizar a comunicação entre você e seu público-alvo!<br /><br />
           Entendemos que cada cliente é único, por isso elaboramos estratégias personalizadas que geram resultados reais e duradouros.

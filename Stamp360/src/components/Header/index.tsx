@@ -1,6 +1,6 @@
 import { HeaderContainer, ListContainer, TitleHeaderContainer } from "./style"
 import { BsFillCaretDownFill } from 'react-icons/bs'
-import logo from '../../assets/text nova.png'
+import logo from '../../assets/logo-1.png'
 
 const Header = () => {
   return (
