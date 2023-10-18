@@ -73,6 +73,8 @@ export const ListContainer = styled.ul`
     border-radius: 10px;
     border: 2px solid transparent;
 
+    cursor: pointer;
+
     &:hover {
       background-color: var(--black);
 

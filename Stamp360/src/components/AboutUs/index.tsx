@@ -3,7 +3,7 @@ import { ContentContainer, ImageContainer, SectionAboutUsContainer } from "./sty
 const AboutUs = () => {
 
   return (
-    <SectionAboutUsContainer>
+    <SectionAboutUsContainer id='about-us'>
       <ContentContainer>
         <h2 className="hidden logo">
           O que é a <span>Stamp?</span>

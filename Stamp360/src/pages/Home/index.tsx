@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import Header from '../../components/Header'
 import { KnowMoreBtn, MainContainer, PartnersCompanies, TitleContainer } from './style'
 import sebrae from '../../assets/SEBRAE-nacional.gif'
@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries?.forEach((entry) => {
-        console.log(entry)
+        // console.log(entry)
         if (entry.isIntersecting) {
           entry.target.classList.add('show')
         } else {

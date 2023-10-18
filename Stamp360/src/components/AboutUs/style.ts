@@ -11,10 +11,9 @@ export const SectionAboutUsContainer = styled.section`
   padding: 1rem 3rem;
   width: 100%;
 
-  border-top: .8px solid var(--primary-color);
-  border-bottom: .8px solid var(--primary-color);
+  background: rgba(10, 10, 10, 10);
 
-  background: var(--black);
+
 
   .hidden {
     opacity: 0;
