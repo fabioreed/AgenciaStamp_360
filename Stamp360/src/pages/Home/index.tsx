@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import Header from '../../components/Header'
 import { KnowMoreBtn, MainContainer, PartnersCompanies, TitleContainer } from './style'
 import sebrae from '../../assets/SEBRAE-nacional.gif'
