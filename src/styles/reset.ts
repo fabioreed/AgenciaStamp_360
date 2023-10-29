@@ -10,8 +10,8 @@ const ResetStyles = createGlobalStyle`
     text-decoration: none;
 
     /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Inter', sans-serif; */
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Outfit', sans-serif; */
   }
 `
 

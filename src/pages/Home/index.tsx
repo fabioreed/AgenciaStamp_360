@@ -8,6 +8,7 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 import AboutUs from '../../components/AboutUs'
 import SocialMedia from '../../components/SocialMedia'
 import Footer from '../../components/Footer'
+// import HeaderLogoHome from '../../components/HeaderLogoHome'
 
 const Home = () => {
   const phoneNumber = "+5571992305676"
@@ -37,8 +38,9 @@ const Home = () => {
     <>
       <Header />
       <MainContainer>
+        {/* <HeaderLogoHome /> */}
         <TitleContainer>
-          <h1>PRONTO PARA <span>ALAVANCAR</span> SUA EMPRESA?</h1>
+          <h1 className='frontend-text'>Pronto para <span>ALAVANCAR</span> sua empresa?</h1>
           <p className='hidden'>Descubra como a <span>STAMP</span> pode impulsionar a sua empresa à novas alturas!</p>
           <KnowMoreBtn to={whatsappUrl} target='_blank'>
             <IoLogoWhatsapp />

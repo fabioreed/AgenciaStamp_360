@@ -59,19 +59,20 @@ export const TitleContainer = styled.div`
   padding: 1rem;
 
   > h1 {
-    color: transparent;
-    background-image: url('https://images.pexels.com/photos/1774986/pexels-photo-1774986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    background-size: cover;
-    background-clip: text;
-    background-attachment: fixed;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    color: var(--gray);
     font-size: 2.5rem;
+
+    .frontend-text {
+      background: linear-gradient(90deg, var(--blue) 0%, var(--black) 60%);
+      color: transparent;
+      font-weight: 700;
+      -webkit-background-clip: text; /* Para aplicar o gradiente ao texto */
+      background-clip: text; /* Para aplicar o gradiente ao texto */
+    }
 
     > span {
       color: var(--primary-color);
-      font-style: italic;
-      font-weight: 800;
+      font-weight: 700;
     }
   }
 
@@ -110,16 +111,16 @@ export const KnowMoreBtn = styled(Link)`
   background-color: var(--primary-color);
 
   color: var(--black);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: .85rem;
+  font-weight: 500;
 
   padding: .7rem 2.4rem;
   width: fit-content;
 
-  border-radius: 10px;
+  border-radius: 16px;
   border: 2px solid transparent;
 
-  box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.1); */
 
   transition: .4s ease;
 
