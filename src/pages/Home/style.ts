@@ -60,7 +60,7 @@ export const TitleContainer = styled.div`
 
   /* Defina o gradiente de três cores como o plano de fundo */
   background: rgb(63,94,251);
-  background: radial-gradient(circle, var(--primary-color) 0%, rgba(18,18,20,1) 28%);
+  background: radial-gradient(circle, var(--hover) 0%, rgba(18,18,20,1) 28%);
 
   /* Adicione o efeito de desfoque */
   position: relative;
@@ -181,6 +181,8 @@ export const PartnersCompanies = styled.section`
   /* background: transparent; */
   position: relative;
   background: url(${backgroundImage}) center/cover no-repeat;
+
+  width: 100%;
   
   &::before {
     content: '';
@@ -261,7 +263,7 @@ export const PartnersCompanies = styled.section`
     }
 
     > figure > div > img {
-      width: 220px;
+      /* width: 220px; */
 
       &:nth-child(2) {
         width: 260px;
