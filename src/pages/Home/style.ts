@@ -58,9 +58,28 @@ export const TitleContainer = styled.div`
 
   padding: 1rem;
 
+  /* Defina o gradiente de três cores como o plano de fundo */
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, var(--primary-color) 0%, rgba(18,18,20,1) 28%);
+
+  /* Adicione o efeito de desfoque */
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px); /* Ajuste o valor de desfoque desejado */
+  }
+
   > h1 {
     color: var(--gray);
     font-size: 2.5rem;
+    z-index: 2;
 
     .frontend-text {
       background: linear-gradient(90deg, var(--blue) 0%, var(--black) 60%);
@@ -120,6 +139,8 @@ export const KnowMoreBtn = styled(Link)`
   border-radius: 16px;
   border: 2px solid transparent;
 
+  z-index: 2;
+
   /* box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.1); */
 
   transition: .4s ease;
@@ -148,7 +169,7 @@ export const KnowMoreBtn = styled(Link)`
   }
 `
 
-const backgroundImage = 'https://c4.wallpaperflare.com/wallpaper/162/894/557/colorful-neon-computer-keyboards-wallpaper-preview.jpg'
+const backgroundImage = 'https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 
 export const PartnersCompanies = styled.section`
   display: flex;
@@ -169,7 +190,7 @@ export const PartnersCompanies = styled.section`
     width: 100%;
     height: 100%;
     background: inherit;
-    filter: blur(20px); /* Ajuste o valor de desfoque desejado */
+    filter: blur(6px);
   }
 
   height: 100vh;
