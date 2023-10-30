@@ -148,6 +148,8 @@ export const KnowMoreBtn = styled(Link)`
   }
 `
 
+const backgroundImage = 'https://c4.wallpaperflare.com/wallpaper/162/894/557/colorful-neon-computer-keyboards-wallpaper-preview.jpg'
+
 export const PartnersCompanies = styled.section`
   display: flex;
   flex-direction: column;
@@ -155,15 +157,28 @@ export const PartnersCompanies = styled.section`
   align-items: center;
   gap: 2.2rem;
 
-  background: transparent;
+  /* background: transparent; */
+  position: relative;
+  background: url(${backgroundImage}) center/cover no-repeat;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px); /* Ajuste o valor de desfoque desejado */
+  }
 
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
 
   > h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--gray);
     text-align: start;
   }
 
@@ -192,7 +207,7 @@ export const PartnersCompanies = styled.section`
     > div > img {
       width: 150px;
 
-      background: var(--black);
+      /* background: var(--black); */
 
       padding: 1rem;
 
