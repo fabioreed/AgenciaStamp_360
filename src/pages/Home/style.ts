@@ -244,6 +244,7 @@ export const PartnersCompanies = styled.section`
 
   @media (min-width: 768px) {
     > h3 {
+      
       font-size: 2.1rem;
     }
 
